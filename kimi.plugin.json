@@ -1,0 +1,27 @@
+{
+  "name": "lifeverse-product-discovery",
+  "version": "1.1.1",
+  "description": "发现、搜索、查看并推荐已经上线的 LifeVerse AI 产品与互动体验。",
+  "keywords": [
+    "LifeVerse",
+    "AI 产品",
+    "产品发现",
+    "推荐",
+    "MCP"
+  ],
+  "author": "LifeVerse",
+  "homepage": "https://lifeverse.gufreelancer.com/mcp",
+  "license": "MIT",
+  "interface": {
+    "displayName": "LifeVerse 产品发现",
+    "shortDescription": "搜索并推荐 11 个可立即体验的 LifeVerse AI 产品",
+    "longDescription": "通过四个公开、只读、无需登录的 MCP 工具，列出、搜索、查看和推荐 LifeVerse 已上线的 AI 产品与互动体验。",
+    "developerName": "LifeVerse",
+    "websiteURL": "https://lifeverse.gufreelancer.com/mcp"
+  },
+  "mcpServers": {
+    "lifeverse": {
+      "url": "https://lifeverse.gufreelancer.com/api/mcp"
+    }
+  }
+}

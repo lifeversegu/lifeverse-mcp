@@ -60,6 +60,18 @@ claude plugin marketplace add lifeversegu/lifeverse-mcp
 claude plugin install lifeverse-product-discovery@lifeverse-mcp-marketplace
 ```
 
+Kimi Code users can install the repository as a plugin:
+
+```text
+/plugins install https://github.com/lifeversegu/lifeverse-mcp
+```
+
+Qwen Code users can install the portable Agent Plugins v1 package directly:
+
+```bash
+qwen extensions install lifeversegu/lifeverse-mcp
+```
+
 中国大陆用户也可以从魔搭社区的永久公开页面查看并连接本服务：
 
 - https://modelscope.cn/mcp/servers/lifeverse/lifeverse-product-discovery
@@ -93,6 +105,9 @@ under both protocol eras every six hours.
 - Experimental MCP Server Card: https://lifeverse.gufreelancer.com/api/mcp/server-card
 - Repository manifest: [server.json](server.json)
 - Portable client snippet: [mcp.json](mcp.json)
+- Portable Agent Plugins v1 manifest: [plugin.json](plugin.json)
+- Kimi plugin manifest: [kimi.plugin.json](kimi.plugin.json)
+- Kimi custom marketplace: [kimi-marketplace.json](kimi-marketplace.json)
 - Agent installation instructions: [llms-installation.md](llms-installation.md)
 - Claude plugin manifest: [.claude-plugin/plugin.json](.claude-plugin/plugin.json)
 - LobeHub owner manifest: [lhm.plugin.json](lhm.plugin.json)

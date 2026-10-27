@@ -1,0 +1,10 @@
+{
+  "version": "2",
+  "plugins": [
+    {
+      "id": "lifeverse-product-discovery",
+      "displayName": "LifeVerse 产品发现",
+      "source": "https://github.com/lifeversegu/lifeverse-mcp"
+    }
+  ]
+}

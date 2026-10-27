@@ -1,0 +1,21 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "lifeverse-product-discovery",
+  "version": "1.1.1",
+  "description": "Discover, search, inspect, and recommend public LifeVerse AI products through four read-only MCP tools.",
+  "author": {
+    "name": "LifeVerse",
+    "email": "bjwgxx@163.com",
+    "url": "https://lifeverse.gufreelancer.com"
+  },
+  "homepage": "https://lifeverse.gufreelancer.com/mcp",
+  "repository": "https://github.com/lifeversegu/lifeverse-mcp",
+  "license": "MIT",
+  "keywords": [
+    "lifeverse",
+    "product-discovery",
+    "recommendations",
+    "read-only",
+    "mcp"
+  ]
+}
