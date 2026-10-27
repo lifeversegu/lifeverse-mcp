@@ -3,7 +3,7 @@
   "name": "com.gufreelancer.lifeverse/public-catalog",
   "title": "LifeVerse Product Discovery",
   "description": "Discover and recommend public LifeVerse AI products and interactive experiences.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "websiteUrl": "https://lifeverse.gufreelancer.com/mcp",
   "repository": {
     "url": "https://github.com/lifeversegu/lifeverse-mcp",
