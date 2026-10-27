@@ -60,6 +60,10 @@ claude plugin marketplace add lifeversegu/lifeverse-mcp
 claude plugin install lifeverse-product-discovery@lifeverse-mcp-marketplace
 ```
 
+中国大陆用户也可以从魔搭社区的永久公开页面查看并连接本服务：
+
+- https://modelscope.cn/mcp/servers/lifeverse/lifeverse-product-discovery
+
 ## Tools
 
 - `lifeverse_list_products` — list public products that are ready to use.
@@ -93,6 +97,7 @@ under both protocol eras every six hours.
 - Claude plugin manifest: [.claude-plugin/plugin.json](.claude-plugin/plugin.json)
 - LobeHub owner manifest: [lhm.plugin.json](lhm.plugin.json)
 - Official MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/com.gufreelancer.lifeverse%2Fpublic-catalog/versions/latest
+- ModelScope 魔搭社区: https://modelscope.cn/mcp/servers/lifeverse/lifeverse-product-discovery
 - Live mcptry health and playground: https://mcptry.com/servers/com.gufreelancer.lifeverse/public-catalog
 - MCPVault listing: https://mcpvault.io/servers/lifeverse-mcp
 - Cursor Store listing: https://www.cursor.store/mcp/lifeversegu/lifeverse-mcp

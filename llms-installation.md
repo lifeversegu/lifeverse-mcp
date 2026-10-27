@@ -10,7 +10,7 @@ install, no API key to create, and no account to authorize.
 - Transport: `streamable-http`
 - Authentication: none
 - Protocol version: `2025-11-25`
-- Runtime server version: `1.1.0`
+- Runtime server version: `1.1.1`
 - Registry metadata version: `1.1.1`
 
 When a client asks for a JSON configuration, use:
@@ -28,6 +28,14 @@ When a client asks for a JSON configuration, use:
 
 If the client provides a form instead, enter the URL exactly as shown, select
 Streamable HTTP, and leave authentication fields empty.
+
+For users in mainland China, the permanent public ModelScope page is:
+
+- https://modelscope.cn/mcp/servers/lifeverse/lifeverse-product-discovery
+
+The canonical service endpoint remains
+`https://lifeverse.gufreelancer.com/api/mcp`; temporary hosted test instances
+must not replace it.
 
 ## Protocol check
 
