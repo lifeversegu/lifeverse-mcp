@@ -29,6 +29,21 @@ jobs:
               | tail -n 1
           }
 
+          modern_request() {
+            local method="$1"
+            local body="$2"
+            shift 2
+            curl --fail --silent --show-error "$MCP_URL" \
+              --header 'Content-Type: application/json' \
+              --header 'Accept: application/json, text/event-stream' \
+              --header 'MCP-Protocol-Version: 2026-07-28' \
+              --header "Mcp-Method: $method" \
+              "$@" \
+              --data "$body"
+          }
+
+          modern_meta='{"io.modelcontextprotocol/protocolVersion":"2026-07-28","io.modelcontextprotocol/clientInfo":{"name":"lifeverse-github-health","version":"1.0.0"},"io.modelcontextprotocol/clientCapabilities":{}}'
+
           initialize="$(request '{"jsonrpc":"2.0","id":1,"method":"initialize","params":{"protocolVersion":"2025-11-25","capabilities":{},"clientInfo":{"name":"lifeverse-github-health","version":"1.0.0"}}}')"
           jq -e '.result.protocolVersion == "2025-11-25" and .result.serverInfo.name == "lifeverse-public-catalog"' <<<"$initialize"
 
@@ -46,6 +61,35 @@ jobs:
 
           catalog="$(request '{"jsonrpc":"2.0","id":3,"method":"tools/call","params":{"name":"lifeverse_list_products","arguments":{}}}')"
           jq -e '.result.structuredContent.products | length == 11' <<<"$catalog"
+
+          discover_body="$(jq -cn --argjson meta "$modern_meta" '{jsonrpc:"2.0",id:4,method:"server/discover",params:{_meta:$meta}}')"
+          discover="$(modern_request 'server/discover' "$discover_body")"
+          jq -e '
+            .result.supportedVersions == ["2026-07-28"] and
+            .result.capabilities.tools.listChanged == true and
+            .result._meta["io.modelcontextprotocol/serverInfo"].name == "lifeverse-public-catalog"
+          ' <<<"$discover"
+
+          modern_tools_body="$(jq -cn --argjson meta "$modern_meta" '{jsonrpc:"2.0",id:5,method:"tools/list",params:{_meta:$meta}}')"
+          modern_tools="$(modern_request 'tools/list' "$modern_tools_body")"
+          jq -e '
+            (.result.tools | length) == 4 and
+            ([.result.tools[].name] | sort) == ([
+              "lifeverse_get_product",
+              "lifeverse_list_products",
+              "lifeverse_recommend_products",
+              "lifeverse_search_products"
+            ] | sort) and
+            .result.resultType == "complete"
+          ' <<<"$modern_tools"
+
+          modern_call_body="$(jq -cn --argjson meta "$modern_meta" '{jsonrpc:"2.0",id:6,method:"tools/call",params:{_meta:$meta,name:"lifeverse_list_products",arguments:{}}}')"
+          modern_catalog="$(modern_request 'tools/call' "$modern_call_body" --header 'Mcp-Name: lifeverse_list_products')"
+          jq -e '
+            (.result.structuredContent.products | length) == 11 and
+            .result.resultType == "complete" and
+            .result._meta["io.modelcontextprotocol/serverInfo"].version == "1.1.0"
+          ' <<<"$modern_catalog"
 
           server_card="$(curl --fail --silent --show-error "$MCP_URL/server-card" \
             --header 'Accept: application/mcp-server-card+json')"
@@ -69,5 +113,5 @@ jobs:
             --header 'Origin: https://malicious.example' \
             --header 'Content-Type: application/json' \
             --header 'Accept: application/json, text/event-stream' \
-            --data '{"jsonrpc":"2.0","id":4,"method":"tools/list","params":{}}')"
+            --data '{"jsonrpc":"2.0","id":7,"method":"tools/list","params":{}}')"
           test "$origin_status" = 403

@@ -21,6 +21,7 @@ LifeVerse 产品发现 MCP 是一个公开、只读、无需登录的远程服�
 | --- | --- |
 | MCP endpoint | `https://lifeverse.gufreelancer.com/api/mcp` |
 | Transport | Streamable HTTP |
+| Protocol compatibility | `2025-11-25` and `2026-07-28` |
 | Authentication | None |
 | Human guide | https://lifeverse.gufreelancer.com/mcp |
 | Official Registry name | `com.gufreelancer.lifeverse/public-catalog` |
@@ -62,6 +63,11 @@ gemini extensions install https://github.com/lifeversegu/lifeverse-mcp
 The catalog currently contains eleven public products. Responses expose only
 public catalog fields. The service does not read or return account, payment,
 order, entitlement, review, unpublished-product, or private user data.
+
+The endpoint supports both the established `initialize` flow and the
+`2026-07-28` per-request envelope flow, including `server/discover`. The
+scheduled health check exercises discovery, tool listing, and a real tool call
+under both protocol eras every six hours.
 
 ## Discovery surfaces
 
