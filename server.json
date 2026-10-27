@@ -1,0 +1,25 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.gufreelancer.lifeverse/public-catalog",
+  "title": "LifeVerse Product Discovery",
+  "description": "Discover and recommend public, ready-to-use LifeVerse AI products and interactive experiences.",
+  "websiteUrl": "https://lifeverse.gufreelancer.com/mcp",
+  "repository": {
+    "url": "https://github.com/lifeversegu/lifeverse-brand-site",
+    "source": "github"
+  },
+  "version": "1.1.0",
+  "icons": [
+    {
+      "src": "https://lifeverse.gufreelancer.com/brand/ai-haowu-exact/mark-black-stage.png",
+      "mimeType": "image/png",
+      "sizes": ["400x400"]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://lifeverse.gufreelancer.com/api/mcp"
+    }
+  ]
+}
