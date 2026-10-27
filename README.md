@@ -103,6 +103,8 @@ under both protocol eras every six hours.
 - AgentShare listing: https://agentshare.dev/registry/166
 - Plug and Ship listing: https://plugandship.dev/p/lifeverse-product-discovery
 - Glama listing: https://glama.ai/mcp/connectors/com.gufreelancer.lifeverse/public-catalog
+- TensorBlock Awesome MCP Servers listing: https://github.com/TensorBlock/awesome-mcp-servers/blob/main/docs/search.md
+- AIAnytime Awesome MCP Servers listing: https://github.com/AIAnytime/Awesome-MCP-Servers/blob/main/servers/lifeverse-product-discovery.json
 
 ## Example requests for an AI agent
 
