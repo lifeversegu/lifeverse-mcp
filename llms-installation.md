@@ -65,5 +65,7 @@ information from this server. It intentionally exposes none of those fields.
 - https://lifeverse.gufreelancer.com/llms.txt
 - https://lifeverse.gufreelancer.com/llms-full.txt
 - https://lifeverse.gufreelancer.com/mcp/server.json
+- https://lifeverse.gufreelancer.com/.well-known/ai-catalog.json
+- https://lifeverse.gufreelancer.com/api/mcp/server-card
 - https://registry.modelcontextprotocol.io/v0.1/servers/com.gufreelancer.lifeverse%2Fpublic-catalog/versions/latest
 

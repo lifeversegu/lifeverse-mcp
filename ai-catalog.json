@@ -1,0 +1,10 @@
+{
+  "specVersion": "1.0",
+  "entries": [
+    {
+      "identifier": "urn:air:gufreelancer.com:mcp:lifeverse-public-catalog",
+      "type": "application/mcp-server-card+json",
+      "url": "https://lifeverse.gufreelancer.com/api/mcp/server-card"
+    }
+  ]
+}

@@ -69,6 +69,8 @@ order, entitlement, review, unpublished-product, or private user data.
 - Compact AI index: https://lifeverse.gufreelancer.com/llms.txt
 - Full AI index: https://lifeverse.gufreelancer.com/llms-full.txt
 - Hosted server manifest: https://lifeverse.gufreelancer.com/mcp/server.json
+- Experimental domain AI Catalog: https://lifeverse.gufreelancer.com/.well-known/ai-catalog.json
+- Experimental MCP Server Card: https://lifeverse.gufreelancer.com/api/mcp/server-card
 - Repository manifest: [server.json](server.json)
 - Portable client snippet: [mcp.json](mcp.json)
 - Agent installation instructions: [llms-installation.md](llms-installation.md)
