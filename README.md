@@ -6,6 +6,7 @@
 
 [![Official MCP Registry](https://img.shields.io/badge/MCP%20Registry-active-0b8f55)](https://registry.modelcontextprotocol.io/v0.1/servers/com.gufreelancer.lifeverse%2Fpublic-catalog/versions/latest)
 [![Glama](https://glama.ai/mcp/connectors/com.gufreelancer.lifeverse/public-catalog/badges/score.svg)](https://glama.ai/mcp/connectors/com.gufreelancer.lifeverse/public-catalog)
+[![Remote MCP health](https://github.com/lifeversegu/lifeverse-mcp/actions/workflows/remote-health.yml/badge.svg)](https://github.com/lifeversegu/lifeverse-mcp/actions/workflows/remote-health.yml)
 [![Transport](https://img.shields.io/badge/transport-Streamable%20HTTP-5b5bd6)](https://modelcontextprotocol.io/)
 
 Public, read-only MCP server for discovering, searching, inspecting, and

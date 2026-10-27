@@ -10,7 +10,8 @@ install, no API key to create, and no account to authorize.
 - Transport: `streamable-http`
 - Authentication: none
 - Protocol version: `2025-11-25`
-- Server version: `1.1.1`
+- Runtime server version: `1.1.0`
+- Registry metadata version: `1.1.1`
 
 When a client asks for a JSON configuration, use:
 

@@ -1,0 +1,55 @@
+name: Remote MCP health
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 */6 * * *"
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Verify public MCP contract
+        shell: bash
+        env:
+          MCP_URL: https://lifeverse.gufreelancer.com/api/mcp
+        run: |
+          set -euo pipefail
+
+          request() {
+            curl --fail --silent --show-error "$MCP_URL" \
+              --header 'Content-Type: application/json' \
+              --header 'Accept: application/json, text/event-stream' \
+              --data "$1" \
+              | sed -n 's/^data: //p' \
+              | tail -n 1
+          }
+
+          initialize="$(request '{"jsonrpc":"2.0","id":1,"method":"initialize","params":{"protocolVersion":"2025-11-25","capabilities":{},"clientInfo":{"name":"lifeverse-github-health","version":"1.0.0"}}}')"
+          jq -e '.result.protocolVersion == "2025-11-25" and .result.serverInfo.name == "lifeverse-public-catalog"' <<<"$initialize"
+
+          tools="$(request '{"jsonrpc":"2.0","id":2,"method":"tools/list","params":{}}')"
+          jq -e '
+            (.result.tools | length) == 4 and
+            ([.result.tools[].name] | sort) == ([
+              "lifeverse_get_product",
+              "lifeverse_list_products",
+              "lifeverse_recommend_products",
+              "lifeverse_search_products"
+            ] | sort) and
+            ([.result.tools[].annotations.readOnlyHint] | all(. == true))
+          ' <<<"$tools"
+
+          catalog="$(request '{"jsonrpc":"2.0","id":3,"method":"tools/call","params":{"name":"lifeverse_list_products","arguments":{}}}')"
+          jq -e '.result.structuredContent.products | length == 11' <<<"$catalog"
+
+          origin_status="$(curl --silent --output /dev/null --write-out '%{http_code}' "$MCP_URL" \
+            --header 'Origin: https://malicious.example' \
+            --header 'Content-Type: application/json' \
+            --header 'Accept: application/json, text/event-stream' \
+            --data '{"jsonrpc":"2.0","id":4,"method":"tools/list","params":{}}')"
+          test "$origin_status" = 403
