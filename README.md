@@ -97,6 +97,7 @@ under both protocol eras every six hours.
 - MCPVault listing: https://mcpvault.io/servers/lifeverse-mcp
 - Cursor Store listing: https://www.cursor.store/mcp/lifeversegu/lifeverse-mcp
 - MCP Harbor listing: https://ai.mcpharbor.dev/servers/com.gufreelancer.lifeverse/public-catalog
+- MCP Marketplace listing: https://mcp-marketplace.io/server/com-gufreelancer-lifeverse-public-catalog
 
 ## Example requests for an AI agent
 
