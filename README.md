@@ -23,7 +23,7 @@ LifeVerse 产品发现 MCP 是一个公开、只读、无需登录的远程服�
 | Authentication | None |
 | Human guide | https://lifeverse.gufreelancer.com/mcp |
 | Official Registry name | `com.gufreelancer.lifeverse/public-catalog` |
-| Current version | `1.1.0` |
+| Current version | `1.1.1` |
 
 Generic client configuration:
 
