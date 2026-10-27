@@ -91,6 +91,7 @@ under both protocol eras every six hours.
 - Claude plugin manifest: [.claude-plugin/plugin.json](.claude-plugin/plugin.json)
 - LobeHub owner manifest: [lhm.plugin.json](lhm.plugin.json)
 - Official MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/com.gufreelancer.lifeverse%2Fpublic-catalog/versions/latest
+- Live mcptry health and playground: https://mcptry.com/servers/com.gufreelancer.lifeverse/public-catalog
 
 ## Example requests for an AI agent
 
