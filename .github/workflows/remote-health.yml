@@ -88,14 +88,14 @@ jobs:
           jq -e '
             (.result.structuredContent.products | length) == 11 and
             .result.resultType == "complete" and
-            .result._meta["io.modelcontextprotocol/serverInfo"].version == "1.1.0"
+            .result._meta["io.modelcontextprotocol/serverInfo"].version == "1.1.1"
           ' <<<"$modern_catalog"
 
           server_card="$(curl --fail --silent --show-error "$MCP_URL/server-card" \
             --header 'Accept: application/mcp-server-card+json')"
           jq -e '
             .name == "com.gufreelancer.lifeverse/public-catalog" and
-            .version == "1.1.0" and
+            .version == "1.1.1" and
             .remotes == [{"type":"streamable-http","url":"https://lifeverse.gufreelancer.com/api/mcp"}]
           ' <<<"$server_card"
 
