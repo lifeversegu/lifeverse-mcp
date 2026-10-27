@@ -39,7 +39,8 @@ Generic client configuration:
 ```
 
 Clients use different settings screens and configuration file locations. Keep
-the endpoint and transport values above unchanged. See [llms-install.md](llms-install.md)
+the endpoint and transport values above unchanged. See
+[llms-installation.md](llms-installation.md)
 for protocol verification and agent-oriented instructions.
 
 ## Tools
@@ -63,6 +64,7 @@ order, entitlement, review, unpublished-product, or private user data.
 - Hosted server manifest: https://lifeverse.gufreelancer.com/mcp/server.json
 - Repository manifest: [server.json](server.json)
 - Portable client snippet: [mcp.json](mcp.json)
+- Agent installation instructions: [llms-installation.md](llms-installation.md)
 - Official MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/com.gufreelancer.lifeverse%2Fpublic-catalog/versions/latest
 
 ## Example requests for an AI agent
