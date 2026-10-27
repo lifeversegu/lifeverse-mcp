@@ -98,6 +98,11 @@ under both protocol eras every six hours.
 - Cursor Store listing: https://www.cursor.store/mcp/lifeversegu/lifeverse-mcp
 - MCP Harbor listing: https://ai.mcpharbor.dev/servers/com.gufreelancer.lifeverse/public-catalog
 - MCP Marketplace listing: https://mcp-marketplace.io/server/com-gufreelancer-lifeverse-public-catalog
+- Stork verified-live listing: https://www.stork.ai/mcp/lifeverse-product-discovery
+- LobeHub listing: https://market.lobehub.com/s/plugins/lifeversegu-lifeverse-mcp
+- AgentShare listing: https://agentshare.dev/registry/166
+- Plug and Ship listing: https://plugandship.dev/p/lifeverse-product-discovery
+- Glama listing: https://glama.ai/mcp/connectors/com.gufreelancer.lifeverse/public-catalog
 
 ## Example requests for an AI agent
 
