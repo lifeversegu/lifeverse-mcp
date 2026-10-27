@@ -1,0 +1,124 @@
+{
+  "author": "LifeVerse",
+  "authorUrl": "https://github.com/lifeversegu",
+  "category": "tools",
+  "cloudEndpoint": "https://lifeverse.gufreelancer.com/api/mcp",
+  "description": "Discover, search, inspect, and recommend public LifeVerse AI products and interactive experiences through four read-only tools.",
+  "homepage": "https://github.com/lifeversegu/lifeverse-mcp",
+  "icon": "https://lifeverse.gufreelancer.com/brand/ai-haowu-exact/mark-black-stage.png",
+  "identifier": "lifeverse-product-discovery",
+  "localizations": [
+    {
+      "description": "通过四个只读工具发现、搜索、查看和推荐已经公开、可以立即体验的 LifeVerse AI 产品与互动体验。",
+      "locale": "zh-CN",
+      "name": "LifeVerse 产品发现",
+      "tags": [
+        "产品发现",
+        "AI产品",
+        "推荐",
+        "只读"
+      ]
+    }
+  ],
+  "name": "LifeVerse Product Discovery",
+  "tags": [
+    "product-discovery",
+    "ai-products",
+    "recommendations",
+    "read-only",
+    "remote-mcp"
+  ],
+  "tools": [
+    {
+      "description": "List LifeVerse products that are public and ready to use, optionally filtered by category.",
+      "inputSchema": {
+        "properties": {
+          "category": {
+            "enum": [
+              "游戏",
+              "互动体验",
+              "效率工具",
+              "创新应用"
+            ],
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "name": "lifeverse_list_products"
+    },
+    {
+      "description": "Search public LifeVerse products by name, category, purpose, capability, or natural-language need.",
+      "inputSchema": {
+        "properties": {
+          "limit": {
+            "default": 5,
+            "maximum": 10,
+            "minimum": 1,
+            "type": "integer"
+          },
+          "query": {
+            "maxLength": 200,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "query"
+        ],
+        "type": "object"
+      },
+      "name": "lifeverse_search_products"
+    },
+    {
+      "description": "Get one public, ready-to-use LifeVerse product by its slug.",
+      "inputSchema": {
+        "properties": {
+          "slug": {
+            "maxLength": 100,
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "slug"
+        ],
+        "type": "object"
+      },
+      "name": "lifeverse_get_product"
+    },
+    {
+      "description": "Recommend the best-matching public LifeVerse products for a natural-language need or scenario.",
+      "inputSchema": {
+        "properties": {
+          "category": {
+            "enum": [
+              "游戏",
+              "互动体验",
+              "效率工具",
+              "创新应用"
+            ],
+            "type": "string"
+          },
+          "limit": {
+            "default": 3,
+            "maximum": 5,
+            "minimum": 1,
+            "type": "integer"
+          },
+          "need": {
+            "maxLength": 200,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "need"
+        ],
+        "type": "object"
+      },
+      "name": "lifeverse_recommend_products"
+    }
+  ],
+  "version": "1.1.1"
+}
