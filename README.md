@@ -1,5 +1,7 @@
 # LifeVerse Product Discovery MCP
 
+[简体中文说明](README.zh-CN.md) · [English](README.md)
+
 <p align="center">
   <img src="assets/icon.png" width="160" height="160" alt="LifeVerse Product Discovery" />
 </p>
