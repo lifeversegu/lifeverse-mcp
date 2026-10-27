@@ -6,7 +6,7 @@
   "description": "Discover, search, inspect, and recommend public LifeVerse AI products and interactive experiences through four read-only tools.",
   "homepage": "https://github.com/lifeversegu/lifeverse-mcp",
   "icon": "https://lifeverse.gufreelancer.com/brand/ai-haowu-exact/mark-black-stage.png",
-  "identifier": "lifeverse-product-discovery",
+  "identifier": "lifeversegu-lifeverse-mcp",
   "localizations": [
     {
       "description": "通过四个只读工具发现、搜索、查看和推荐已经公开、可以立即体验的 LifeVerse AI 产品与互动体验。",
