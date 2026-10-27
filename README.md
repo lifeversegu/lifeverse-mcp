@@ -43,6 +43,12 @@ the endpoint and transport values above unchanged. See
 [llms-installation.md](llms-installation.md)
 for protocol verification and agent-oriented instructions.
 
+Gemini CLI users can install the repository directly as an extension:
+
+```bash
+gemini extensions install https://github.com/lifeversegu/lifeverse-mcp
+```
+
 ## Tools
 
 - `lifeverse_list_products` — list public products that are ready to use.
