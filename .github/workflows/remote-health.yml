@@ -109,6 +109,15 @@ jobs:
             )] | length) == 1
           ' <<<"$ai_catalog"
 
+          domain_mcp="$(curl --fail --silent --show-error \
+            'https://lifeverse.gufreelancer.com/.well-known/mcp.json')"
+          jq -e '
+            .mcpServers.lifeverse == {
+              "type":"streamable-http",
+              "url":"https://lifeverse.gufreelancer.com/api/mcp"
+            }
+          ' <<<"$domain_mcp"
+
           origin_status="$(curl --silent --output /dev/null --write-out '%{http_code}' "$MCP_URL" \
             --header 'Origin: https://malicious.example' \
             --header 'Content-Type: application/json' \

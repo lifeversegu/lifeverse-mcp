@@ -83,6 +83,7 @@ under both protocol eras every six hours.
 - Human connection guide: https://lifeverse.gufreelancer.com/mcp
 - Compact AI index: https://lifeverse.gufreelancer.com/llms.txt
 - Full AI index: https://lifeverse.gufreelancer.com/llms-full.txt
+- Domain MCP discovery: https://lifeverse.gufreelancer.com/.well-known/mcp.json
 - Hosted server manifest: https://lifeverse.gufreelancer.com/mcp/server.json
 - Experimental domain AI Catalog: https://lifeverse.gufreelancer.com/.well-known/ai-catalog.json
 - Experimental MCP Server Card: https://lifeverse.gufreelancer.com/api/mcp/server-card
