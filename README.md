@@ -51,6 +51,14 @@ Gemini CLI users can install the repository directly as an extension:
 gemini extensions install https://github.com/lifeversegu/lifeverse-mcp
 ```
 
+Claude Code users can add the repository as a plugin marketplace and install
+the bundled remote connector:
+
+```bash
+claude plugin marketplace add lifeversegu/lifeverse-mcp
+claude plugin install lifeverse-product-discovery@lifeverse-mcp-marketplace
+```
+
 ## Tools
 
 - `lifeverse_list_products` — list public products that are ready to use.
@@ -80,6 +88,7 @@ under both protocol eras every six hours.
 - Repository manifest: [server.json](server.json)
 - Portable client snippet: [mcp.json](mcp.json)
 - Agent installation instructions: [llms-installation.md](llms-installation.md)
+- Claude plugin manifest: [.claude-plugin/plugin.json](.claude-plugin/plugin.json)
 - LobeHub owner manifest: [lhm.plugin.json](lhm.plugin.json)
 - Official MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/com.gufreelancer.lifeverse%2Fpublic-catalog/versions/latest
 

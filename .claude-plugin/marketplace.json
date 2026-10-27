@@ -1,0 +1,13 @@
+{
+  "name": "lifeverse-mcp-marketplace",
+  "description": "Official LifeVerse remote MCP connectors.",
+  "owner": {
+    "name": "LifeVerse"
+  },
+  "plugins": [
+    {
+      "name": "lifeverse-product-discovery",
+      "source": "./"
+    }
+  ]
+}

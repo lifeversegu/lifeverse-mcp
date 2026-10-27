@@ -1,0 +1,25 @@
+{
+  "name": "lifeverse-product-discovery",
+  "displayName": "LifeVerse Product Discovery",
+  "version": "1.1.1",
+  "description": "Discover, search, inspect, and recommend public LifeVerse AI products and interactive experiences through four read-only MCP tools.",
+  "author": {
+    "name": "LifeVerse",
+    "url": "https://github.com/lifeversegu"
+  },
+  "homepage": "https://lifeverse.gufreelancer.com/mcp",
+  "repository": "https://github.com/lifeversegu/lifeverse-mcp",
+  "license": "MIT",
+  "keywords": [
+    "lifeverse",
+    "product-discovery",
+    "recommendations",
+    "read-only",
+    "mcp"
+  ],
+  "icon": "./assets/icon.png",
+  "documentationUrl": "https://lifeverse.gufreelancer.com/mcp",
+  "supportUrl": "https://github.com/lifeversegu/lifeverse-mcp/issues",
+  "privacyPolicyUrl": "https://lifeverse.gufreelancer.com/privacy",
+  "termsOfServiceUrl": "https://lifeverse.gufreelancer.com/terms"
+}
