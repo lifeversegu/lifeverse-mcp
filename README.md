@@ -94,6 +94,9 @@ under both protocol eras every six hours.
 - LobeHub owner manifest: [lhm.plugin.json](lhm.plugin.json)
 - Official MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/com.gufreelancer.lifeverse%2Fpublic-catalog/versions/latest
 - Live mcptry health and playground: https://mcptry.com/servers/com.gufreelancer.lifeverse/public-catalog
+- MCPVault listing: https://mcpvault.io/servers/lifeverse-mcp
+- Cursor Store listing: https://www.cursor.store/mcp/lifeversegu/lifeverse-mcp
+- MCP Harbor listing: https://ai.mcpharbor.dev/servers/com.gufreelancer.lifeverse/public-catalog
 
 ## Example requests for an AI agent
 
