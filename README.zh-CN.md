@@ -78,6 +78,8 @@ qwen extensions install lifeversegu/lifeverse-mcp
 - MCP Server Manifest：https://lifeverse.gufreelancer.com/mcp/server.json
 - MCP Server Card：https://lifeverse.gufreelancer.com/api/mcp/server-card
 - 官方 MCP Registry：https://registry.modelcontextprotocol.io/v0.1/servers/com.gufreelancer.lifeverse%2Fpublic-catalog/versions/latest
+- mcpservers.org：https://mcpservers.org/servers/lifeversegu/lifeverse-mcp
+- Walnut：https://walnut.world/w/lifeverse-product-discovery
 
 ## 安全边界
 
