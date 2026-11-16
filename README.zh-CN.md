@@ -79,7 +79,15 @@ qwen extensions install lifeversegu/lifeverse-mcp
 - MCP Server Card：https://lifeverse.gufreelancer.com/api/mcp/server-card
 - 官方 MCP Registry：https://registry.modelcontextprotocol.io/v0.1/servers/com.gufreelancer.lifeverse%2Fpublic-catalog/versions/latest
 - mcpservers.org：https://mcpservers.org/servers/lifeversegu/lifeverse-mcp
-- Walnut：https://walnut.world/w/lifeverse-product-discovery
+- mcpub 归档登记（live 验证及 live-only 搜索展示仍待完成）：https://mcpub.dev/
+
+## 已停服或失效的历史接入
+
+- 腾讯元器已于 2026 年 11 月 9 日停止服务。原 LifeVerse 元器智能体及其
+  分发渠道接入现已不可用；历史记录不代表当前仍可连接。详见
+  [腾讯元器官方停服公告](https://yuanqi.tencent.com/cl/service-discontinuation)。
+- 原 Walnut 条目现已跳转到其他站点，不再展示 LifeVerse，因此不再计为公开
+  收录。mcpub 已保留归档登记，但 LifeVerse 尚未进入其 live-only 搜索结果。
 
 ## 安全边界
 

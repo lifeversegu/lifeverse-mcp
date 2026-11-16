@@ -126,9 +126,19 @@ under both protocol eras every six hours.
 - Plug and Ship listing: https://plugandship.dev/p/lifeverse-product-discovery
 - Glama listing: https://glama.ai/mcp/connectors/com.gufreelancer.lifeverse/public-catalog
 - mcpservers.org listing: https://mcpservers.org/servers/lifeversegu/lifeverse-mcp
-- Walnut listing: https://walnut.world/w/lifeverse-product-discovery
+- mcpub archive registration (live verification and live-only search listing pending): https://mcpub.dev/
 - TensorBlock Awesome MCP Servers listing: https://github.com/TensorBlock/awesome-mcp-servers/blob/main/docs/search.md
 - AIAnytime Awesome MCP Servers listing: https://github.com/AIAnytime/Awesome-MCP-Servers/blob/main/servers/lifeverse-product-discovery.json
+
+## Retired integrations
+
+- Tencent Yuanqi stopped service on November 9, 2026. The former LifeVerse
+  Yuanqi agent and its distribution-channel integrations are no longer
+  available. Historical Yuanqi records do not describe a current connection.
+  See the [official shutdown notice](https://yuanqi.tencent.com/cl/service-discontinuation).
+- The former Walnut listing now redirects away from the LifeVerse entry and is
+  no longer counted as a public listing. mcpub preserves an archive
+  registration, but LifeVerse is not yet visible in mcpub's live-only search.
 
 ## Example requests for an AI agent
 
